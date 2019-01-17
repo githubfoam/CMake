@@ -23,9 +23,9 @@ matrix:
       env : TRAVIS_OS_NAME=macOS 10.13
     - os: windows
       env : TRAVIS_OS_NAME=Win-version 1803
-# compiler:
-#     - gcc
-#     - clang
+compiler:
+    - gcc
+    - clang
 # jobs:
 #   include:
     # - stage: cmake
