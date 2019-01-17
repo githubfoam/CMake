@@ -9,6 +9,14 @@ compiler:
 jobs:
   include:
     - stage: cmake
+      before_script:
+      - cmake --version
+      - curl -sSL https://github.com/Kitware/CMake/releases/download/v3.13.3/cmake-3.13.3.tar.gz | sudo tar -xzC /opt
+      - cd /opt/cmake-3.13.3
+      - sudo ./configure
+      - sudo make
+      - sudo make install
+      - cmake --version 
       script:
       - cmake .
       - make
