@@ -8,3 +8,5 @@ int main(int argc, char **argv) {
 
     result = math::add(1, 2);
 cout << "add 1 + 2 : " << result << endl;
+
+}
