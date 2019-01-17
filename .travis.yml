@@ -10,8 +10,8 @@ os:
 compiler:
     - gcc
     - clang
-jobs:
-  include:
+# jobs:
+#   include:
     # - stage: cmake
     #   script:
     #   - cmake .
@@ -21,7 +21,7 @@ jobs:
     # - stage: ctest
     #   script:
     #   - ctest
-    - stage: Second method
+    # - stage: Second method
       before_script:
       - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake ; fi
       script:
