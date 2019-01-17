@@ -8,3 +8,6 @@ script:
     - cmake .
     - make
     - ctest
+    - cmake -H. -Bbuild
+    - cmake --build build -- -j3
+    - ./build/test
