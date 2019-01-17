@@ -8,12 +8,14 @@ compiler:
     - gcc
 jobs:
   include:
-    - stage: run dev-sec/linux-baseline profile from supermarket on container target.
+    - stage: cmake
       script:
       - cmake .
-    - stage: run dev-sec/linux-baseline profile from github sources on container target. with "package-08" control
-      script:
       - make
+      - ctest
+    - stage: ctest
+      script:
+      - ctest
     # directory that contains the source code and the CMakeLists.txt file — in this case “.” refers to the current directory
     # - cmake .
     # Once the Makefile has been created, the make command can be used to build the project
