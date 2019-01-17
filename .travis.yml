@@ -12,7 +12,9 @@ jobs:
       script:
       - cmake .
       - make
-      - ctest
+    - stage: make
+      script:
+      - make
     - stage: ctest
       script:
       - ctest
