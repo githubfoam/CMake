@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 2.8.9)
 
 # Give this project a name.
-project (test)
+project (CMake-test)
 
 # CMake subdirectories to include for these libraries.
 # subdirs(src)
