@@ -12,24 +12,25 @@ compiler:
     - clang
 jobs:
   include:
-    - stage: cmake
-      script:
-      - cmake .
-      - make
-      - ./CMake-test
-      - ctest
-    - stage: ctest
-      script:
-      - ctest
+    # - stage: cmake
+    #   script:
+    #   - cmake .
+    #   - make
+    #   - ./CMake-test
+    #   - ctest
+    # - stage: ctest
+    #   script:
+    #   - ctest
     - stage: Second method
-      before_install:
+      before_script:
       - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake ; fi
       script:
-      - mkdir _builds
-      - cd _builds
-      - cmake ..
-      - make
-      - ctest
+      # - mkdir _builds
+      # - cd _builds
+      # - cmake ..
+      # - make
+      # - ctest
+      - cmake --version
 notifications:
    #email: false
    email:
