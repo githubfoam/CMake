@@ -12,8 +12,8 @@ project (test)
 add_library(math src/math.cc)
 
 # Add definition for test  binary
-add_executable(cmake-tutorial src/main.cc)
-target_link_libraries(cmake-tutorial math)
+add_executable(CMake-test src/main.cc)
+target_link_libraries(CMake-test math)
 
 # Third-party library
 include(ExternalProject)
