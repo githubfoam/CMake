@@ -12,9 +12,8 @@ jobs:
       script:
       - cmake .
       - make
-    - stage: make
-      script:
-      - make
+      - ./CMake-test
+      - ctest
     - stage: ctest
       script:
       - ctest
