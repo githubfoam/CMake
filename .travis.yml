@@ -17,17 +17,6 @@ jobs:
     - stage: ctest
       script:
       - ctest
-    # directory that contains the source code and the CMakeLists.txt file — in this case “.” refers to the current directory
-    # - cmake .
-    # Once the Makefile has been created, the make command can be used to build the project
-    # Do not make edits to this Makefile, as any edits will be overwritten the next time that the cmake utility is executed
-    # - make
-    # - ctest
-    # - cmake -H. -Bbuild
-    # - cmake --build build -- -j3
-    # - ./build/test
-    # - cd build
-    # - cmake ..
 notifications:
    #email: false
    email:
