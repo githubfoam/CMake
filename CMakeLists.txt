@@ -1,5 +1,5 @@
 # include(CTest)
-# Set a minimum version of CMake to be used, depending on the syntax of the CMakeLists files
+# Set a minimum version of CMake
 cmake_minimum_required(VERSION 2.8.9)
 
 # Give this project a name.
