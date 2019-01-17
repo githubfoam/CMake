@@ -22,15 +22,15 @@ compiler:
     #   script:
     #   - ctest
     # - stage: Second method
-      before_script:
-      - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake ; fi
-      script:
-      - mkdir _builds
-      - cd _builds
-      - cmake ..
-      - make
-      - ctest
-      - cmake --version
+before_script:
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake ; fi
+script:
+- mkdir _builds
+- cd _builds
+- cmake ..
+- make
+- ctest
+- cmake --version
 notifications:
    #email: false
    email:
