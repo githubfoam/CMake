@@ -8,7 +8,7 @@ compiler:
     - gcc
 jobs:
   include:
-    - stage: cmake 
+    - stage: cmake
       script:
       - cmake .
       - make
@@ -16,6 +16,13 @@ jobs:
       - ctest
     - stage: ctest
       script:
+      - ctest
+    - stage: Second method
+      script:
+      - mkdir _builds
+      - cd _builds
+      - cmake ..
+      - make
       - ctest
 notifications:
    #email: false
