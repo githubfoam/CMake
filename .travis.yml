@@ -4,8 +4,12 @@ branches:
     - dev
 language:
     - cpp
+os:
+  - linux
+  - osx
 compiler:
     - gcc
+    - clang
 jobs:
   include:
     - stage: cmake
@@ -18,6 +22,8 @@ jobs:
       script:
       - ctest
     - stage: Second method
+      before_install:
+      - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake ; fi
       script:
       - mkdir _builds
       - cd _builds
