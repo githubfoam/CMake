@@ -11,15 +11,15 @@ matrix:
   include:
     - os: linux
       dist: trusty
-      compiler: gcc
+      # compiler: gcc
       env : TRAVIS_OS_NAME=trusty
     - os: linux
       dist: xenial
-      compiler: gcc
+      # compiler: gcc
       env : TRAVIS_OS_NAME=xenial
     - os: osx
       osx_image: xcode10.1
-      compiler: clang
+      # compiler: clang
       env : TRAVIS_OS_NAME=macOS 10.13
     - os: windows
       env : TRAVIS_OS_NAME=Win-version 1803
