@@ -3,7 +3,7 @@
 
 
 Travis (.com) branch:
-[![Travis (.com)](https://img.shields.io/travis/com/githubfoam/CMake-test.svg)](https://travis-ci.com/githubfoam/CMake-test)  
+[![Travis (.com)](https://img.shields.io/travis/com/githubfoam/CMake.svg)](https://travis-ci.com/githubfoam/CMake)  
 
 
 ----------------
